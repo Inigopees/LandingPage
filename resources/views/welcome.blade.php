@@ -124,12 +124,13 @@
   <footer class="py-5 bg-dark">
     <div class="container">
         <div id="contacta">
-            <form action="" method="">
+            <form action="{{route('insertarComentario')}}" method="post">
+                @csrf
                 <label class="infoForm">Nombre</label><br>
                 <input type="text" name="Nombre"/><br>
                 <label class="infoForm">Email</label><br>
                 <input type="email" name="Email"/>&nbsp;&nbsp;&nbsp;
-                <input type="button" value="Enviar"/><br>
+                <input type="submit" value="Enviar"/><br>
                 <label class="infoForm">Comentario</label><br>
                 <input type="textarea" name="Comentario"/><br>
             </form>
