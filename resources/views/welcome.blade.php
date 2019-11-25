@@ -16,11 +16,6 @@
   <!-- Custom styles for this template -->
   <link href="css/small-business.css" rel="stylesheet">
 
-  <!-- JS creado por nosotros -->
-  <script type="text/javascript" src="vendor/jquery/js.js"></script>
-
-  <!-- Agregado JQuery -->
-  <script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
 </head>
 
 <body>
@@ -35,9 +30,9 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
           <div id="Login">
             <form action="" method="">
-                <label class="infoLogin">Username:</label><br>
+                <label class="infoForm">Username:</label><br>
                 <input class="datosLogin" type="text" name="username"><br>
-                <label class="infoLogin">Password:</label><br>
+                <label class="infoForm">Password:</label><br>
                 <input class="datosLogin" type="password" name="password"><br><br>
                 <input type="button" name="iniciarSesion" value="inicar sesion">
                 <input type="button" name="registrarse" value="Registrarse">
@@ -128,6 +123,17 @@
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
+        <div id="contacta">
+            <form action="" method="">
+                <label class="infoForm">Nombre</label><br>
+                <input type="text" name="Nombre"/><br>
+                <label class="infoForm">Email</label><br>
+                <input type="email" name="Email"/>&nbsp;&nbsp;&nbsp;
+                <input type="button" value="Enviar"/><br>
+                <label class="infoForm">Comentario</label><br>
+                <input type="textarea" name="Comentario"/><br>
+            </form>
+        </div>
       <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
     </div>
     <!-- /.container -->
@@ -136,6 +142,7 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery/js.js"></script>
 
 </body>
 
