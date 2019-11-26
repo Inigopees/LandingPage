@@ -131,11 +131,11 @@
                 <label class="infoForm">Email :</label>&nbsp;&nbsp;
                 <input type="email" name="Email"/><br><br>
                 <label class="infoForm">Comentario :</label>
-                <textarea name="Comentario" rows="5" cols="50">Escribe tu comentario</textarea>&nbsp;&nbsp;
+                <textarea name="Comentario" rows="5" cols="40">Escribe tu comentario</textarea>&nbsp;&nbsp;
                 <input type="submit" value="Enviar"/><br>
             </form>
         </div>
-      <p class="m-0 text-right text-white">Copyright &copy; Your Website 2019</p>
+      <p class="m-0 text-right text-white">Copyright &copy; Iñigo Perez 2019</p>
     </div>
     <!-- /.container -->
   </footer>
@@ -143,18 +143,6 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script type="text/javascript">
-    function mostrar(){
-        let divcontacto = document.getElementById("contacta").style.display;
-        const oculto = none;
-        if (divcontacto === oculto){
-            document.getElementById("contacta").style.display = 'block';
-        }
-        else{
-            document.getElementById("contacta").style.display = 'none';
-        }
-    }
-  </script>
 
 </body>
 
