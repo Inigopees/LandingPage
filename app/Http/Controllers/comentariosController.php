@@ -3,10 +3,11 @@
 namespace App\Http\Controllers;
 use App\Mensajes;
 use Illuminate\Http\Request;
+use App\Http\Requests\ComentarioRequest;
 
 class comentariosController extends Controller
 {
-    function insertarComentario(request $request)
+    function insertarComentario(ComentarioRequest $request)
     {
         $mensaje = new Mensajes;
             $mensaje->nombre = $request->input('Nombre');

@@ -133,6 +133,15 @@
                 <label class="infoForm">Comentario :</label>
                 <textarea name="Comentario" rows="5" cols="40">Escribe tu comentario</textarea>&nbsp;&nbsp;
                 <input type="submit" value="Enviar"/><br>
+                @if ($errors->has('Nombre'))
+                <a style="color:red" class="error">{{ $errors->first('Nombre') }}</a><br>
+                @endif
+                @if ($errors->has('Email'))
+                <a style="color:red" class="error">{{ $errors->first('Email') }}</a><br>
+                @endif
+                @if ($errors->has('Comentario'))
+                <a style="color:red" class="error">{{ $errors->first('Comentario') }}</a><br>
+                @endif
             </form>
         </div>
       <p class="m-0 text-right text-white">Copyright &copy; Iñigo Perez 2019</p>
