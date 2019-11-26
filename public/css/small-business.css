@@ -37,5 +37,19 @@ p{
 }
 
 #contacta{
+  width:65%;
   display:block;
+}
+
+#redes{
+  width:35%;
+}
+
+.RRSS{
+  height: 50;
+  width: 50%;
+}
+
+#info{
+  width:100%;
 }

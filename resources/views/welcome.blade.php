@@ -41,7 +41,7 @@
           <div id="BotonLogin">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" >Login/Registro
+                    <a href="" class="nav-link" >Login/Registro
                     <span class="sr-only">(current)</span>
                     </a>
                 </li>
@@ -122,7 +122,7 @@
 
   <!-- Footer -->
   <footer class="py-5 bg-dark">
-    <div class="container">
+    <div class="container d-flex flex-direction-row flex-wrap">
         <div id="contacta">
             <form action="{{route('insertarComentario')}}" method="post">
                 @csrf
@@ -144,7 +144,14 @@
                 @endif
             </form>
         </div>
-      <p class="m-0 text-right text-white">Copyright &copy; Iñigo Perez 2019</p>
+        <div id="redes" class="d-flex flex-direction-column align-items-center">
+            <a href=""><img class="RRSS" src="img/RedesSociales/facebook.png" alt="facebook"></a>
+            <a href=""><img class="RRSS" src="img/RedesSociales/twitter.png" alt="twitter"></a>
+            <a href=""><img class="RRSS" src="img/RedesSociales/instagram.png" alt="instagram"></a>
+        </div> 
+        <div id="info">
+            <br><p class="m-0 text-center text-white">Copyright &copy; Iñigo Perez 2019</p>
+        </div>
     </div>
     <!-- /.container -->
   </footer>
