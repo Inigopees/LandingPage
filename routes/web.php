@@ -13,6 +13,6 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
-Route::post('/','comentariosController@insertarComentario')->name('insertarComentario');
+Route::post('/comentario','comentariosController@insertarComentario')->name('insertarComentario');

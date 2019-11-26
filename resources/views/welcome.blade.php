@@ -23,7 +23,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Banco del tiempo</a>
+      <a class="navbar-brand" href="{{route('welcome')}}">Banco del tiempo</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -126,16 +126,16 @@
         <div id="contacta">
             <form action="{{route('insertarComentario')}}" method="post">
                 @csrf
-                <label class="infoForm">Nombre</label><br>
-                <input type="text" name="Nombre"/><br>
-                <label class="infoForm">Email</label><br>
-                <input type="email" name="Email"/>&nbsp;&nbsp;&nbsp;
+                <label class="infoForm">Nombre :</label>&nbsp;&nbsp;
+                <input type="text" name="Nombre"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label class="infoForm">Email :</label>&nbsp;&nbsp;
+                <input type="email" name="Email"/><br><br>
+                <label class="infoForm">Comentario :</label>
+                <textarea name="Comentario" rows="5" cols="50">Escribe tu comentario</textarea>&nbsp;&nbsp;
                 <input type="submit" value="Enviar"/><br>
-                <label class="infoForm">Comentario</label><br>
-                <input type="textarea" name="Comentario"/><br>
             </form>
         </div>
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+      <p class="m-0 text-right text-white">Copyright &copy; Your Website 2019</p>
     </div>
     <!-- /.container -->
   </footer>
@@ -143,7 +143,18 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="vendor/jquery/js.js"></script>
+  <script type="text/javascript">
+    function mostrar(){
+        let divcontacto = document.getElementById("contacta").style.display;
+        const oculto = none;
+        if (divcontacto === oculto){
+            document.getElementById("contacta").style.display = 'block';
+        }
+        else{
+            document.getElementById("contacta").style.display = 'none';
+        }
+    }
+  </script>
 
 </body>
 

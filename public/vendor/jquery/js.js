@@ -1,9 +1,10 @@
-<script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
+<script type="text/javascript">
+    fucntion mostrar(){
+        let div = document.getElementById("lista");
+    }
+</script>
 
-$(document).ready(function(){
-    $("#BotonLogin").on("click",function(){
-        $('#Login').css("display", "block");
-    });
-});
+
+
 
 
